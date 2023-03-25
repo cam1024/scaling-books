@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.use(routes);
-const startApolloServer = async (typeDefs, resolvers) => {
+const startApolloServer = async (_typeDefs, _resolvers) => {
   await server.start();
   server.applyMiddleware({ app });
 
